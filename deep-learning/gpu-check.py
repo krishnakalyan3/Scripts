@@ -10,5 +10,4 @@ import torch
 torch.cuda.is_available()
 
 # Fast AI
-fastai.utils.show_install
-
+python3 -m fastai.utils.show_install
