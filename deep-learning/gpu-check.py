@@ -9,4 +9,6 @@ K.tensorflow_backend._get_available_gpus()
 import torch
 torch.cuda.is_available()
 
-# https://github.com/pytorch/pytorch/pull/2016
+# Fast AI
+fastai.utils.show_install
+
