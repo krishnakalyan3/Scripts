@@ -1,0 +1,5 @@
+sudo npm install -g @vue/cli
+vue --version
+vue create test
+npm run serve
+vue ui
