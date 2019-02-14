@@ -1,0 +1,7 @@
+
+
+# Remote -> Local
+gsutil rsync -d -r gs://bucket/folder .
+
+# Local -> Remote
+gsutil rsync -d -r . gs://bucket/folder

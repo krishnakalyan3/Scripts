@@ -1,0 +1,43 @@
+# System
+sudo apt-get update && sudo apt-get --assume-yes upgrade
+sudo apt-get --assume-yes install build-essential gcc g++ make binutils python3-pip
+sudo apt-get --assume-yes install software-properties-common vim screen 
+
+# Cuda
+wget https://developer.nvidia.com/compute/cuda/10.0/Prod/local_installers/cuda-repo-ubuntu1804-10-0-local-10.0.130-410.48_1.0-1_amd64
+sudo dpkg -i cuda-repo-ubuntu1804-10-0-local-10.0.130-410.48_1.0-1_amd64
+sudo apt-key add /var/cuda-repo-10-0-local-10.0.130-410.48/7fa2af80.pub
+sudo apt-get update
+sudo apt-get install cuda
+nvidia-smi
+   
+# Anaconda
+wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
+bash Anaconda3-5.0.1-Linux-x86_64.sh -b
+echo 'export PATH=~/anaconda3/bin:$PATH' >> ~/.bashrc
+export PATH=~/anaconda3/bin:$PATH
+
+# FastAI
+git clone https://github.com/fastai/fastai.git
+cd fastai/
+conda env update
+echo 'source activate fastai' >> ~/.bashrc
+source activate fastai
+source ~/.bashrc
+
+# Pip
+PyTorch
+pip3 install numpy torchvision_nightly
+pip3 install torch_nightly -f https://download.pytorch.org/whl/nightly/cu100/torch_nightly.html
+pip3 install ipywidgets jupyterlab
+
+# Setup Jupyter
+jupyter notebook --generate-config
+echo "c.NotebookApp.allow_origin = '*'" >> ~/.jupyter/jupyter_notebook_config.py
+echo "c.NotebookApp.ip = '0.0.0.0'" >> ~/.jupyter/jupyter_notebook_config.py
+echo "c.NotebookApp.open_browser = False" >> ~/.jupyter/jupyter_notebook_config.py
+
+# Choose password
+jupyter notebook password
+jupyter nbextension enable --py widgetsnbextension --sys-prefix
+

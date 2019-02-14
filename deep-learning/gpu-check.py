@@ -8,6 +8,9 @@ K.tensorflow_backend._get_available_gpus()
 
 import torch
 torch.cuda.is_available()
+print(torch.__version__)
 
 # Fast AI
-python3 -m fastai.utils.show_install
+import fastai.utils.collect_env; fastai.utils.collect_env.show_install(1)
+
+# python3 -m fastai.utils.show_install
