@@ -1,0 +1,17 @@
+git fetch --all
+git pull upstream master
+git checkout pca_perf
+git systemml-pr 694
+git fetch --all
+git pull --rebase apache master
+git pull apache master
+git pull --rebase apache master
+git lg
+git commit --amend --date="$(date +%s)"
+git checkout master
+git pull apache master
+git merge pr-694
+git lg
+git push apache master
+
+git remote add apache https://git-wip-us.apache.org/repos/asf/systemml.git
