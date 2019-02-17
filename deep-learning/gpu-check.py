@@ -12,5 +12,3 @@ print(torch.__version__)
 
 # Fast AI
 import fastai.utils.collect_env; fastai.utils.collect_env.show_install(1)
-
-# python3 -m fastai.utils.show_install
