@@ -1,4 +1,8 @@
 
+# Delete 500 Files
+ls | head -n 500 | xargs -d '\n' rm -f --
+
+# GCP Sync
 
 # Remote -> Local
 gsutil rsync -d -r gs://bucket/folder .
