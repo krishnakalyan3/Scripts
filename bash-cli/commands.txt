@@ -9,3 +9,6 @@ gsutil rsync -d -r gs://bucket/folder .
 
 # Local -> Remote
 gsutil rsync -d -r . gs://bucket/folder
+
+# Count
+gsutil du gs://pth | wc -l
