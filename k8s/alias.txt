@@ -1,0 +1,6 @@
+alias k='kubectl'
+alias kg='kubectl get'
+alias kgp='kubectl get pod'
+alias kgpall='kubectl get pods --all-namespaces'
+alias kgs='kubectl get svc'
+alias kgeall='kubectl get events -w --all-namespaces'
