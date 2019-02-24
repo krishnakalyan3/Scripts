@@ -31,6 +31,10 @@
 [alias]
   bare = rm --cached -r .
   brdel = branch -D
+  fa = fetch --all
+  pom = pull origin master
+  mum = merge upstream/master
+  rv = remote -v
 
 [credential "https://github.com"]
   username = krishnakalyan3
