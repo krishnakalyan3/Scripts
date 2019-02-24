@@ -1,0 +1,10 @@
+kubectl expose deployment hello-world --type=LoadBalancer --name=my-service
+kubectl exec -it wordpress-wordpress-0 bash -n wordpress
+kubectl edit svc wordpress -n wordpress
+kubectl get events -w --all-namespaces
+kubectl cp filename  wordpress/wordpress-wordpress-0:/var/www/html/wp-content/uploads
+
+# Tools
+apt-get update
+apt-get install vim
+
