@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+
+import matplotlib.pyplot as plt
+import numpy as np
+plt.rc("legend", fontsize=10, frameon=True)
+plt.rc("text", usetex=True)
+
+
+def _scatter_plot(data, xlab='x-axis', ylab='y-axis', title='Scatter Dim', color='r'):
+    data_arr = np.array(data)
+
+    plt.scatter(data_arr[:,0], data_arr[:,1], color=color)
+    plt.xlabel(xlab)
+    plt.ylabel(ylab)
+    plt.title(title)
+    plt.show()
+    return plt
+
+
+def _bar_plot(data, xlab='x-axis', ylab='y-axis', title='Histogram Dim', column=0, color='r'):
+    x = np.array(data)
+
+    plt.hist(x[:, column], color=color)
+    plt.xlabel(xlab)
+    plt.ylabel(ylab)
+    plt.title(title)
+    plt.show()
+    return plt
