@@ -12,3 +12,6 @@ gsutil rsync -d -r . gs://bucket/folder
 
 # Count
 gsutil du gs://pth | wc -l
+
+# owner
+sudo chown -R krishna:krishna anaconda3/
