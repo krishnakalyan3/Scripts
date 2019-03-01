@@ -8,5 +8,4 @@ apt-get update
 apt-get install vim
 
 # Wordpress
-kubectl cp filename  wordpress/wordpress-wordpress-0:/var/www/html/wp-content/uploads
 kubectl cp filename agrivision/wordpress-wordpress-0:/var/www/html/wp-content/themes
