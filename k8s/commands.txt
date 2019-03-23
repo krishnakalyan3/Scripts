@@ -9,3 +9,5 @@ apt-get install vim
 
 # Wordpress
 kubectl cp filename agrivision/wordpress-wordpress-0:/var/www/html/wp-content/themes
+
+kubectl port-forward righteous-swan-mongodb-855bffd746-lvxzs 27017:27017

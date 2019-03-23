@@ -1,4 +1,4 @@
-
 git clone https://github.com/fastai/fastai
 cd fastai
 tools/run-after-git-clone
+sudo pip3 install -e ".[dev]"
