@@ -68,7 +68,7 @@ def deploy(path, v2='data-v2'):
     for i in sub_folders:
         print('Processing {}'.format(i.name))
         v2_dir_name = Path(src.parents[0], v2, i.name)
-        create_dir(v2_dir_name)
+        Path(v2_dir_name).mkdir(parents=True, exist_ok=True)
         for child in tqdm(i.iterdir()):
             img_resize(child, v2_dir_name)
 
@@ -77,7 +77,3 @@ def img_resize(src_img_path, dest_img_path, resize=512, ext='JPEG'):
     img = Image.open(src_img_path)
     img_resize = img.thumbnail([resize, resize], Image.ANTIALIAS)
     img.save(Path(dest_img_path, file_name), ext)
-
-
-def create_dir(path):
-    Path(path).mkdir(parents=True, exist_ok=True)

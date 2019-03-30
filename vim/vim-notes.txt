@@ -1,0 +1,9 @@
+d -> delete
+w -> word
+d + w -> delete a word
+c -> delete and insert
+. -> remember the last command
+y -> yank
+f + <letter you want> -> find to letter on the line you are in
+/word -> document search
+
