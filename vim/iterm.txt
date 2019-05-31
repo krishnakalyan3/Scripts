@@ -2,3 +2,5 @@ split horizontal -> cmd + shift + D
 split vertical -> cmd + D
 Tabs -> cmd + left / cmd + right
 Cycle Panes -> cmd + ]
+Full Screen -> cmd + enter
+Close Pane -> cmd + w
