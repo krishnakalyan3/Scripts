@@ -1,0 +1,4 @@
+split horizontal -> cmd + shift + D
+split vertical -> cmd + D
+Tabs -> cmd + left / cmd + right
+Cycle Panes -> cmd + ]
