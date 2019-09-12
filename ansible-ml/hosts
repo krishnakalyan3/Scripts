@@ -1,0 +1,7 @@
+[all]
+3.123.153.234
+
+[all:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/Users/kkalyan/github/kaggle/kagglekp.pem
+ansible_python_interpreter=/usr/bin/python3
