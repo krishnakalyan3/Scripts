@@ -11,5 +11,4 @@ MACOSX_DEPLOYMENT_TARGET=10.9 CC=clang CXX=clang++ python setup.py install
 cd docs
 sudo pip3 install -r requirements.txt
 make html
-
-
+conda install -c pytorch pytorch cudatoolkit=10.0 -y
