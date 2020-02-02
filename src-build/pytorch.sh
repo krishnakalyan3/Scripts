@@ -12,4 +12,4 @@ cd docs
 sudo pip3 install -r requirements.txt
 make html
 
-conda install -c pytorch pytorch cudatoolkit=10.0
+conda install -c pytorch pytorch cudatoolkit=10.0 -y
