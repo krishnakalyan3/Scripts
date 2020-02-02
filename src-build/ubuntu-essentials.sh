@@ -11,9 +11,10 @@ sudo apt-get install cuda
 nvidia-smi
 
 # Nvtop
+sudo apt-get --assume-yes install cmake libncurses5-dev
 git clone https://github.com/Syllo/nvtop.git
 mkdir -p nvtop/build && cd nvtop/build
 cmake ..
 make
-make install
+sudo make install
 nvtop
