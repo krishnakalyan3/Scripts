@@ -7,6 +7,6 @@ chmod +x Miniconda3-latest-Linux-x86_64.sh
 echo 'export PATH=/root/miniconda3/bin:$PATH' >> ~/.bashrc
 
 # More libraries
-# conda install anaconda
+# conda install anaconda -y 
 # conda install conda
 # conda install -c pytorch -c fastai fastai
