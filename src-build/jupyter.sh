@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-conda install -c conda-forge jupyterlab
-sudo apt install npm
+conda install -c conda-forge jupyterlab -y
+sudo apt install npm -y
 conda install -c conda-forge jupyterlab-nvdashboard -y
 
 # Setup Jupyter
