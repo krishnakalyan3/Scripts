@@ -1,13 +1,21 @@
 sudo apt-get update && sudo apt-get --assume-yes upgrade
-sudo apt-get  --assume-yes install screen build-essential gcc g++ make binutils python3-pip
+sudo apt-get --assume-yes install screen build-essential gcc g++ make binutils python3-pip
 sudo apt-get --assume-yes install software-properties-common vim screen htop imagemagick
 
-# Cuda
+# Cuda 10.0
 wget https://developer.nvidia.com/compute/cuda/10.0/Prod/local_installers/cuda-repo-ubuntu1804-10-0-local-10.0.130-410.48_1.0-1_amd64
 sudo dpkg -i cuda-repo-ubuntu1804-10-0-local-10.0.130-410.48_1.0-1_amd64
 sudo apt-key add /var/cuda-repo-10-0-local-10.0.130-410.48/7fa2af80.pub
 sudo apt-get update
 sudo apt-get install cuda
+nvidia-smi
+
+# Cuda 10.1
+wget https://developer.nvidia.com/compute/cuda/10.1/Prod/local_installers/cuda-repo-ubuntu1804-10-1-local-10.1.105-418.39_1.0-1_amd64.deb
+sudo dpkg -i cuda-repo-ubuntu1804-10-1-local-10.1.105-418.39_1.0-1_amd64.deb
+sudo apt-key add /var/cuda-repo-10-1-local-10.1.105-418.39/7fa2af80.pub
+sudo apt-get update
+sudo apt-get --assume-yes install cuda
 nvidia-smi
 
 # Nvtop
