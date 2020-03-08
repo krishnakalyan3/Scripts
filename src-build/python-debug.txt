@@ -1,0 +1,10 @@
+# Python Verison
+python --version
+python3 --version
+
+import sys; sys.version_info
+
+import os
+print(os.environ['PYTHONPATH'])
+
+
