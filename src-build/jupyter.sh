@@ -15,3 +15,5 @@ jupyter notebook password
 jupyter nbextension enable --py widgetsnbextension --sys-prefix
 
 # pip install ipywidgets bokeh pynvml jupyterlab-nvdashboard
+
+# jupyter nbconvert --to notebook --inplace --execute 09_Baseline_1.ipynb
