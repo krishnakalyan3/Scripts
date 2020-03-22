@@ -16,4 +16,4 @@ jupyter nbextension enable --py widgetsnbextension --sys-prefix
 
 # pip install ipywidgets bokeh pynvml jupyterlab-nvdashboard
 
-# jupyter nbconvert --to notebook --inplace --execute 09_Baseline_1.ipynb
+# jupyter nbconvert --to notebook --inplace  --ExecutePreprocessor.timeout=-1  --execute Imgsize.ipynb
