@@ -3,6 +3,7 @@
 conda install -c conda-forge jupyterlab -y
 sudo apt install npm -y
 conda install -c conda-forge jupyterlab-nvdashboard -y
+conda install -c conda-forge ipywidgets -y
 
 # Setup Jupyter
 jupyter notebook --generate-config
@@ -12,7 +13,6 @@ echo "c.NotebookApp.open_browser = False" >> ~/.jupyter/jupyter_notebook_config.
 
 # Choose password
 jupyter notebook password
-jupyter nbextension enable --py widgetsnbextension --sys-prefix
 
 # pip install ipywidgets bokeh pynvml jupyterlab-nvdashboard
 
