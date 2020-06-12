@@ -18,6 +18,13 @@ sudo apt-get update
 sudo apt-get --assume-yes install cuda
 nvidia-smi
 
+# Cude 10.2, Ubuntu 18
+wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda-repo-ubuntu1804-10-2-local-10.2.89-440.33.01_1.0-1_amd64.deb
+sudo dpkg -i cuda-repo-ubuntu1804-10-2-local-10.2.89-440.33.01_1.0-1_amd64.deb
+sudo apt-key add /var/cuda-repo-10-2-local-10.2.89-440.33.01/7fa2af80.pub
+sudo apt-get update
+sudo apt-get -y install cuda
+
 # Nvtop
 sudo apt-get --assume-yes install cmake libncurses5-dev
 git clone https://github.com/Syllo/nvtop.git
