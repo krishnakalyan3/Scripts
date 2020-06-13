@@ -1,4 +1,7 @@
- python3 -c "import matplotlib"
- nvidia-smi
+python3 -c "import matplotlib"
+python3 -c "from fastai.vision.all import *"
+
+
+nvidia-smi
  
  
