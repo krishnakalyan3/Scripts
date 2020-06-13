@@ -1,6 +1,5 @@
 python3 -c "import matplotlib"
-python3 -c "from fastai.vision.all import *"
-
+python3 -c "import fastai.utils.collect_env; fastai.utils.collect_env.show_install(1)"
 
 nvidia-smi
  
