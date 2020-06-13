@@ -5,6 +5,9 @@ sudo apt install npm -y
 conda install -c conda-forge jupyterlab-nvdashboard -y
 conda install -c conda-forge ipywidgets -y
 
+# after source activate fastai2
+python3 -m ipykernel install --user --name fastai2 --display-name "fastai2"
+
 # Setup Jupyter
 jupyter notebook --generate-config
 echo "c.NotebookApp.allow_origin = '*'" >> ~/.jupyter/jupyter_notebook_config.py
