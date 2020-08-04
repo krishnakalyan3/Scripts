@@ -1,0 +1,8 @@
+
+# Submodules
+git submodule update --init --recursive 
+git config --global submodule.recurse true
+
+# git pull with autostash
+git config --global pull.rebase true
+git config --global rebase.autoStash true
