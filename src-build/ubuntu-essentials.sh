@@ -1,6 +1,6 @@
 sudo apt-get update && sudo apt-get --assume-yes upgrade
 sudo apt-get --assume-yes install screen build-essential gcc g++ make binutils python3-pip
-sudo apt-get --assume-yes install software-properties-common vim screen htop imagemagick wget
+sudo apt-get --assume-yes install software-properties-common vim screen htop imagemagick wget git
 
 # Cuda 10.0
 wget https://developer.nvidia.com/compute/cuda/10.0/Prod/local_installers/cuda-repo-ubuntu1804-10-0-local-10.0.130-410.48_1.0-1_amd64
