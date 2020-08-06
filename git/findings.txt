@@ -1,6 +1,7 @@
 
 # Submodules
-git submodule update --init --recursive 
+git submodule sync
+git submodule update --init --recursive --remote
 git config --global submodule.recurse true
 
 # git pull with autostash
