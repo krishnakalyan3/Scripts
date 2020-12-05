@@ -1,0 +1,2 @@
+git remote add skalyan https://github.infra.cloudera.com/skalyan/test.git
+git pull skalyan branch_name
