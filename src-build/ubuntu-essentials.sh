@@ -1,3 +1,5 @@
+# Repos https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/
+
 sudo apt-get update && sudo apt-get --assume-yes upgrade
 sudo apt-get --assume-yes install screen build-essential gcc g++ make binutils python3-pip
 sudo apt-get --assume-yes install software-properties-common vim screen htop imagemagick wget git
