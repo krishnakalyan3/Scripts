@@ -23,3 +23,7 @@ ubuntu-drivers devices
 # Reboot after
 sudo apt-get install nvidia-driver-460
 
+# Anaconda 
+conda create -n ktest
+conda activate ktest
+
