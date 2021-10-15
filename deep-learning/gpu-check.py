@@ -10,5 +10,10 @@ import torch
 torch.cuda.is_available()
 print(torch.__version__)
 
-# Fast AI
 import fastai.utils.collect_env; fastai.utils.collect_env.show_install(1)
+
+# Check if Pytorch Works
+device = torch.device("cuda0")
+torch.zeros(4,3, device=device)
+
+
