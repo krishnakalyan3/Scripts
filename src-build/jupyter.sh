@@ -2,7 +2,7 @@
 
 sudo apt install npm -y
 conda install -c conda-forge jupyterlab mamba_gator  jupyterlab-nvdashboard ipywidgets -y
-conda install nb_conda_kernels
+conda install conda-forge::nb_conda_kernels
 
 # Setup Jupyter
 jupyter notebook --generate-config
