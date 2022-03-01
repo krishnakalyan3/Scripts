@@ -20,3 +20,10 @@ torch.zeros(4,3, device=device)
 
 from fastai.test_utils import *
 show_install(True)
+
+import torch
+print(torch.eye(3))
+
+
+from torch.utils.collect_env import main
+main()
