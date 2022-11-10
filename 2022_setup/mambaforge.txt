@@ -5,28 +5,8 @@ lsb_release -a
 # MambaForge
 wget https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-Linux-x86_64.sh
 bash Mambaforge-Linux-x86_64.sh -b
+~/mambaforge/bin/mamba init zsh
 
 # Create ENV
-conda create -n jl python=3.9
-conda activate jl
-
-# Jupyter Lab
-pip install jupyterlab
-pip install jupyterlab_templates
-jupyter serverextension enable --py jupyterlab_templates
-
-jupyter notebook --generate-config
-echo "c.NotebookApp.allow_origin = '*'" >> ~/.jupyter/jupyter_notebook_config.py
-echo "c.NotebookApp.ip = '0.0.0.0'" >> ~/.jupyter/jupyter_notebook_config.py
-echo "c.NotebookApp.open_browser = False" >> ~/.jupyter/jupyter_notebook_config.py
-
-# Choose password
-jupyter notebook password
-
-python -m lightning create cluster krishna6 \
-  --provider aws \
-  --region eu-central-1 \
-  --instance-types t3.xlarge \
-  --external-id "b4hUl28H1eDR2eLT6GiTaOgCKuclsG" \
-  --role-arn "arn:aws:iam::706281511356:role/lit-byoc-role" \
-  --wait
+conda create -n jupyter python=3.9
+conda activate jupyter
