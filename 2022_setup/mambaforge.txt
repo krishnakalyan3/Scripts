@@ -8,5 +8,5 @@ bash Mambaforge-Linux-x86_64.sh -b
 ~/mambaforge/bin/mamba init zsh
 
 # Create ENV
-conda create -n jupyter python=3.9
-conda activate jupyter
+conda create -n my_env python=3.9
+conda activate my_env
